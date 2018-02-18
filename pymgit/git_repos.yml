@@ -1,0 +1,537 @@
+---
+########################
+# Personal/home file
+# Should be run from Ubuntu-bash
+########################
+
+#==========
+# Github
+#==========
+
+#-----
+# Personal (watsonb)
+#
+# Template
+#- src: git@github.com:watsonb/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/github/
+#-----
+
+- src: git@github.com:watsonb/pymgit.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/github/
+
+- src: git@github.com:watsonb/k8s-playbooks.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/github/
+
+- src: git@github.com:watsonb/sikuli-scripts.git
+  version: master
+  dest: /mnt/c/Users/bwats/workspace/github/
+
+- src: git@github.com:watsonb/my-django-project.git
+  version: master
+  dest: /mnt/c/Users/bwats/workspace/github/
+
+# Others
+
+- src: git@github.com:MindPointGroup/RHEL7-STIG.git
+  version: devel
+  dest: /mnt/c/Users/bwats/workspace/github/
+
+- src: git@github.com:ansible/ansible.git
+  version: devel
+  dest: /mnt/c/Users/bwats/workspace/github/
+
+#==========
+# MITRE CoDev
+#==========
+
+# SeaVision
+
+# MSI
+
+#==========
+# DI2E
+#==========
+
+# DI2E Credentials
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/credential.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/credentials
+
+#-----
+# Miscellaneous
+#
+# Template
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/misc
+#-----
+
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/deployment_repo.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/misc
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/mpasapps.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/misc
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/wls_audit.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/misc
+
+#-----
+# Ansible Inventories
+#
+# Template
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/inventories
+#-----
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/grdn_asp_inventory.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/inventories
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/grdn_inventory.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/inventories
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/grdn_npes_ben.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/inventories
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/grdn_npes_mt.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/inventories
+
+#-----
+# Ansible Playbooks
+#
+# Template
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/playbooks
+#-----
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/npes_playbooks.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/playbooks
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/asp.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/playbooks
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/provision_mpas.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/playbooks
+
+#-----
+# Ansible Roles
+#
+# Template
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+#-----
+
+#needs master
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_certs_to_jks.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/add_cert_to_wallet.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/add_ldap_groups.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/add_ohs_entry.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/add_partition.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/admin_server_setup.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_controller.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_nexus_oss.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_oracle_modules.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/ansible_modules
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_role_docker.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_role_gradle.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_role_jboss_eap.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_role_maven.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_role_maven_nexus_config.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+#needs master
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_role_pip_config.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible_role_winterb.oracledb.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/binary_server.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/cfssl_ca.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/cfssl_endpoint.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/cifs_client.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/configure_oam.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/configure_oud.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/configure_oudsm.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/configure_wls.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/create_oracle_inventory.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/firewall_service.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/gateway_config.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/gateway_update.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/git_server.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/gnome_customize.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/haproxy-keepalived.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/install_fmw.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/install_oam.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/install_ohs.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/install_oracle_db.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/install_oud.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/install_oudsm.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/install_wls.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/intellij.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/java_openjdk.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/java_oracle.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/jenkins_plugin_repository.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/jenkins_server.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/jenkins_slave.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/nodejs.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/npm_common_global.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/npm_repo.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ntp.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracle-db.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracledb_disk.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracledb_gi_install.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracledb_kickstart.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracledb_network.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracledb_preinstall.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracledb_rac.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracledb_sqlnet.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracledb_swonly.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/oracledb_tde.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/photon_on_vmware.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/pip_client.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/pip_server.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/rhel_vm_on_vmware.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/role_template.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/selenium_drivers.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/sql_developer.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/traffic_manager.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/vmware_remote_console.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/win_auto_login.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/win_curl.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/win_ssh_key.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/wls_admin_server.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/wls_managed_server.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/xrdp.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/yum_client.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/yum_server.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/yum_update.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/roles
+
+#-----
+# Jenkins Pipelines
+#
+# Template
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/jenkins_pipelines
+#-----
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/pipeline.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/jenkins_pipelines
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/sample_dahlgren_gradle_ear.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/jenkins_pipelines
+
+#-----
+# Jasmine REST API tests
+#
+# Template
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/jasmine_tests
+#-----
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/test_infra_api.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/jasmine_tests
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/test_infra_api_gw.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/jasmine_tests
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/test_infra_api_tm.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/jasmine_tests
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/test_infra_api_wl.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/jasmine_tests
+
+#-----
+# Protractor E2E tests
+#
+# Template
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/protractor_tests
+#-----
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/test_infra_e2e.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/protractor_tests
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/test_infra_e2e_tm.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/protractor_tests
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/test_infra_e2e_wl.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/protractor_tests
+
+#-----
+# Python
+#
+# Template
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/python
+#-----
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/ansible-sc.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/python
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/war_machine.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/python
+
+#-----
+# VM Image Template management
+#
+# Template
+#- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/.git
+#  version: develop
+#  dest: /mnt/c/Users/bwats/workspace/di2e/vm_template
+#-----
+
+- src: ssh://git@bitbucket.di2e.net:7999/ispanauto/kickstart_rhel.git
+  version: develop
+  dest: /mnt/c/Users/bwats/workspace/di2e/vm_template
