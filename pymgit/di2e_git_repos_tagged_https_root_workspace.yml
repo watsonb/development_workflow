@@ -1,0 +1,587 @@
+---
+########################
+# Personal/home file
+# Should be run from Ubuntu-bash
+########################
+
+#==========
+# DI2E
+#==========
+
+# DI2E Credentials
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/credential.git
+  version: develop
+  dest: /workspace/di2e/credentials
+  tags: [di2e, accounts]
+
+#-----
+# Miscellaneous
+#
+# Template
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/.git
+#  version: develop
+#  dest: /workspace/di2e/misc
+#-----
+
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/deployment_repo.git
+#  version: develop
+#  dest: /workspace/di2e/misc
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/mpasapps.git
+  version: develop
+  dest: /workspace/di2e/misc
+  tags: [di2e, misc]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/wls_audit.git
+  version: develop
+  dest: /workspace/di2e/misc
+  tags: [di2e, misc]
+
+#-----
+# Ansible Inventories
+#
+# Template
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/.git
+#  version: develop
+#  dest: /workspace/di2e/inventories
+#-----
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/grdn_asp_inventory.git
+  version: develop
+  dest: /workspace/di2e/inventories
+  tags: [di2e, ansible, inventories]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/grdn_inventory.git
+  version: develop
+  dest: /workspace/di2e/inventories
+  tags: [di2e, ansible, inventories]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/grdn_npes_ben.git
+  version: develop
+  dest: /workspace/di2e/inventories
+  tags: [di2e, ansible, inventories]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/grdn_npes_mt.git
+  version: develop
+  dest: /workspace/di2e/inventories
+  tags: [di2e, ansible, inventories]
+
+#-----
+# Ansible Playbooks
+#
+# Template
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/.git
+#  version: develop
+#  dest: /workspace/di2e/playbooks
+#-----
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/npes_playbooks.git
+  version: develop
+  dest: /workspace/di2e/playbooks
+  tags: [di2e, ansible, playbooks]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/asp.git
+  version: develop
+  dest: /workspace/di2e/playbooks
+  tags: [di2e, ansible, playbooks]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/provision_mpas.git
+  version: develop
+  dest: /workspace/di2e/playbooks
+  tags: [di2e, ansible, playbooks]
+
+#-----
+# Ansible Roles
+#
+# Template
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/.git
+#  version: develop
+#  dest: /workspace/di2e/roles
+#-----
+
+#needs master
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_certs_to_jks.git
+#  version: develop
+#  dest: /workspace/di2e/roles
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_cert_to_wallet.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_ldap_groups.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_ohs_entry.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_partition.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/admin_server_setup.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_controller.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_nexus_oss.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_oracle_modules.git
+  version: develop
+  dest: /workspace/di2e/ansible_modules
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_docker.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_gradle.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_jboss_eap.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_maven.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_maven_nexus_config.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+#needs master
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_pip_config.git
+#  version: develop
+#  dest: /workspace/di2e/roles
+#  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_winterb.oracledb.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/binary_server.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/cfssl_ca.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/cfssl_endpoint.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/cifs_client.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/configure_oam.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/configure_oud.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/configure_oudsm.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/configure_wls.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/create_oracle_inventory.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/firewall_service.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/gateway_config.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/gateway_update.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/git_server.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/gnome_customize.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/haproxy-keepalived.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_fmw.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_oam.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_ohs.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_oracle_db.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_oud.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_oudsm.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_wls.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/intellij.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/java_openjdk.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/java_oracle.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/jenkins_plugin_repository.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/jenkins_server.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/jenkins_slave.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/nodejs.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/npm_common_global.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/npm_repo.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ntp.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracle-db.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_disk.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_gi_install.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_kickstart.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_network.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_preinstall.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_rac.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_sqlnet.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_swonly.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_tde.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/photon_on_vmware.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/pip_client.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/pip_server.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/rhel_vm_on_vmware.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/role_template.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/selenium_drivers.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/sql_developer.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/traffic_manager.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/vmware_remote_console.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/win_auto_login.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/win_curl.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/win_ssh_key.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/wls_admin_server.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/wls_managed_server.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/xrdp.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/yum_client.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/yum_server.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/yum_update.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+
+#-----
+# Jenkins Pipelines
+#
+# Template
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/.git
+#  version: develop
+#  dest: /workspace/di2e/jenkins_pipelines
+#-----
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/pipeline.git
+  version: develop
+  dest: /workspace/di2e/jenkins_pipelines
+  tags: [di2e, jenkins, pipelines]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/sample_dahlgren_gradle_ear.git
+  version: develop
+  dest: /workspace/di2e/jenkins_pipelines
+  tags: [di2e, jenkins, pipelines]
+
+#-----
+# Jasmine REST API tests
+#
+# Template
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/.git
+#  version: develop
+#  dest: /workspace/di2e/jasmine_tests
+#-----
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/test_infra_api.git
+  version: develop
+  dest: /workspace/di2e/jasmine_tests
+  tags: [di2e, tests, jasmine, rest]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/test_infra_api_gw.git
+  version: develop
+  dest: /workspace/di2e/jasmine_tests
+  tags: [di2e, tests, jasmine, rest]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/test_infra_api_tm.git
+  version: develop
+  dest: /workspace/di2e/jasmine_tests
+  tags: [di2e, tests, jasmine, rest]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/test_infra_api_wl.git
+  version: develop
+  dest: /workspace/di2e/jasmine_tests
+  tags: [di2e, tests, jasmine, rest]
+
+#-----
+# Protractor E2E tests
+#
+# Template
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/.git
+#  version: develop
+#  dest: /workspace/di2e/protractor_tests
+#-----
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/test_infra_e2e.git
+  version: develop
+  dest: /workspace/di2e/protractor_tests
+  tags: [di2e, tests, protractor, e2e]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/test_infra_e2e_tm.git
+  version: develop
+  dest: /workspace/di2e/protractor_tests
+  tags: [di2e, tests, protractor, e2e]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/test_infra_e2e_wl.git
+  version: develop
+  dest: /workspace/di2e/protractor_tests
+  tags: [di2e, tests, protractor, e2e]
+
+#-----
+# Python
+#
+# Template
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/.git
+#  version: develop
+#  dest: /workspace/di2e/python
+#-----
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible-sc.git
+  version: develop
+  dest: /workspace/di2e/python
+  tags: [di2e, python]
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/war_machine.git
+  version: develop
+  dest: /workspace/di2e/python
+  tags: [di2e, python]
+
+#-----
+# VM Image Template management
+#
+# Template
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/.git
+#  version: develop
+#  dest: /workspace/di2e/vm_template
+#-----
+
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/kickstart_rhel.git
+  version: develop
+  dest: /workspace/di2e/vm_template
+  tags: [di2e, vm, templates, kickstart]
