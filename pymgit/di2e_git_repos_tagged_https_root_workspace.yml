@@ -37,6 +37,16 @@
   version: develop
   dest: /workspace/di2e/misc
   tags: [di2e, misc]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/jenkins-plugins.git
+  version: develop
+  dest: /workspace/di2e/misc
+  tags: [di2e, misc]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/pypi-packages.git
+  version: develop
+  dest: /workspace/di2e/misc
+  tags: [di2e, misc]
 
 #-----
 # Ansible Inventories
@@ -154,6 +164,11 @@
   version: develop
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_gradle_properties_installer.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_jboss_eap.git
   version: develop
@@ -169,12 +184,27 @@
   version: develop
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_oscap.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
 
 #needs master
-#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_pip_config.git
-#  version: develop
-#  dest: /workspace/di2e/roles
-#  tags: [di2e, ansible, roles]
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_pip_config.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_trusted_root_cert.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_war_machine.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_winterb.oracledb.git
   version: develop
@@ -201,6 +231,11 @@
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
 
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/configure_dbca.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+  
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/configure_oam.git
   version: develop
   dest: /workspace/di2e/roles
@@ -281,10 +316,11 @@
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
 
-- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_oudsm.git
-  version: develop
-  dest: /workspace/di2e/roles
-  tags: [di2e, ansible, roles]
+# Wertz deleted on 13 Mar 2018
+#- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_oudsm.git
+#  version: develop
+#  dest: /workspace/di2e/roles
+#  tags: [di2e, ansible, roles]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/install_wls.git
   version: develop
@@ -317,6 +353,11 @@
   tags: [di2e, ansible, roles]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/jenkins_slave.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/nfs_client.git
   version: develop
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
