@@ -35,12 +35,12 @@
   tags: [di2e, misc]
   
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/jenkins-plugins.git
-  version: develop
+  version: master
   dest: /workspace/di2e/misc
   tags: [di2e, misc]
   
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/pypi-packages.git
-  version: develop
+  version: master
   dest: /workspace/di2e/misc
   tags: [di2e, misc]
 
@@ -106,7 +106,7 @@
 #  dest: /workspace/di2e/roles
 #-----
 
-- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_certs_to_jks.git
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_cert_to_jks.git
   version: develop
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
@@ -187,7 +187,7 @@
   tags: [di2e, ansible, roles]
 
 #needs master
-- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_pip_config.git
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ansible_role_pip_nexus_config.git
   version: develop
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
@@ -405,7 +405,7 @@
 #  tags: [di2e, ansible, roles]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_client_install.git
-  version: develop
+  version: master
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
 
