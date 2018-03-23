@@ -109,6 +109,7 @@
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_certs_to_jks.git
   version: develop
   dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/add_cert_to_wallet.git
   version: develop
