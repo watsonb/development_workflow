@@ -211,6 +211,11 @@
   version: develop
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ar_configure_auto_start.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ar_create_managed_server.git
   version: develop
@@ -218,6 +223,16 @@
   tags: [di2e, ansible, roles]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ar_deploy_application.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ar_gpg_keygen.git
+  version: develop
+  dest: /workspace/di2e/roles
+  tags: [di2e, ansible, roles]
+  
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/ar_rhel_subscribe.git
   version: develop
   dest: /workspace/di2e/roles
   tags: [di2e, ansible, roles]
