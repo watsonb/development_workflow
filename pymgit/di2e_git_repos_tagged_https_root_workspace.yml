@@ -473,30 +473,30 @@
   dest: /home/watsonb/workspace/di2e/ispanauto/roles
   tags: [di2e, ansible, roles, ispanauto]
 
-- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_gi_install.git
-  version: develop
-  dest: /home/watsonb/workspace/di2e/ispanauto/roles
-  tags: [di2e, ansible, roles, ispanauto]
+# - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_gi_install.git
+#   version: develop
+#   dest: /home/watsonb/workspace/di2e/ispanauto/roles
+#   tags: [di2e, ansible, roles, ispanauto]
 
-- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_kickstart.git
-  version: develop
-  dest: /home/watsonb/workspace/di2e/ispanauto/roles
-  tags: [di2e, ansible, roles, ispanauto]
+# - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_kickstart.git
+#   version: develop
+#   dest: /home/watsonb/workspace/di2e/ispanauto/roles
+#   tags: [di2e, ansible, roles, ispanauto]
 
-- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_network.git
-  version: develop
-  dest: /home/watsonb/workspace/di2e/ispanauto/roles
-  tags: [di2e, ansible, roles, ispanauto]
+# - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_network.git
+#   version: develop
+#   dest: /home/watsonb/workspace/di2e/ispanauto/roles
+#   tags: [di2e, ansible, roles, ispanauto]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_preinstall.git
   version: develop
   dest: /home/watsonb/workspace/di2e/ispanauto/roles
   tags: [di2e, ansible, roles, ispanauto]
 
-- src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_rac.git
-  version: develop
-  dest: /home/watsonb/workspace/di2e/ispanauto/roles
-  tags: [di2e, ansible, roles, ispanauto]
+# - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_rac.git
+#   version: develop
+#   dest: /home/watsonb/workspace/di2e/ispanauto/roles
+#   tags: [di2e, ansible, roles, ispanauto]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/ispanauto/oracledb_sqlnet.git
   version: develop
@@ -738,7 +738,7 @@
   dest: /home/watsonb/workspace/di2e/hbcdevops/roles
   tags: [di2e, ansible, roles, hbcdevops]
 
-- src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/ar_vmware_create_instance.git
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/ar_vmware_instance.git
   version: develop
   dest: /home/watsonb/workspace/di2e/hbcdevops/roles
   tags: [di2e, ansible, roles, hbcdevops]
@@ -879,7 +879,7 @@
 # -----
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/cprel_jenkins.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
@@ -889,37 +889,37 @@
   tags: [di2e, other, hbcdevops]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/gapcie-playground.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/gs-rest-service.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/jp-helloworld-sample.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/p3_mock_monitor.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/ruby-hello-world.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/sh_jenkins_plugins.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/sh_pypi_packages.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
@@ -933,7 +933,7 @@
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
-- src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/srg_gapcie_target_service.git
+- src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/src_gapcie_target_service.git
   version: develop
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
@@ -964,7 +964,7 @@
   tags: [di2e, other, hbcdevops]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/src_spa_ssl.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
@@ -979,7 +979,7 @@
   tags: [di2e, other, hbcdevops]
 
 - src: https://benjamin.watson@bitbucket.di2e.net/scm/hbcdevops/strike-planning-domain-model.git
-  version: develop
+  version: master
   dest: /home/watsonb/workspace/di2e/hbcdevops/other
   tags: [di2e, other, hbcdevops]
 
